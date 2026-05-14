@@ -1,0 +1,1199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portafolio de Evidencias – Recursos y Necesidades de México</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
+  <link rel="stylesheet" href="recursos-y-necesidad.css"/>
+</head>
+<body>
+
+<!-- ─────────── NAV ─────────── -->
+<nav>
+  <div class="nav-logo" onclick="navigate('inicio')">
+    <i class="bi bi-pin-map-fill"></i> Descubre México
+  </div>
+  <ul class="nav-links">
+    <li><a onclick="navigate('inicio')" data-page="inicio"><i class="bi bi-house-door"></i> Inicio</a></li>
+    <li><a onclick="navigate('geo-economica')" data-page="geo-economica"><i class="bi bi-cash-coin"></i> Geo. Económica</a></li>
+    <li><a onclick="navigate('geo-fisica')" data-page="geo-fisica"><i class="bi bi-tsunami"></i> Geo. Física</a></li>
+    <li><a onclick="navigate('desarrollo')" data-page="desarrollo"><i class="bi bi-recycle"></i> Des. Sustentable</a></li>
+    <li><a onclick="navigate('sectores')" data-page="sectores"><i class="bi bi-boxes"></i> Sectores</a></li>
+    <li><a onclick="navigate('agropecuario')" data-page="agropecuario"><i class="bi bi-sunlight"></i> S. Agropecuario</a></li>
+    <li><a onclick="navigate('industrial')" data-page="industrial"><i class="bi bi-hammer"></i> S. Industrial</a></li>
+    <li><a onclick="navigate('servicios')" data-page="servicios"><i class="bi bi-headset"></i> S. Servicios</a></li>
+    <li><a onclick="navigate('politica-fin')" data-page="politica-fin"><i class="bi bi-bank2"></i> Pol. Financiera</a></li>
+    <li><a onclick="navigate('sobre')" data-page="sobre"><i class="bi bi-person-badge"></i> Diseñador</a></li>
+    <li><a onclick="navigate('fuentes')" data-page="fuentes"><i class="bi bi-journal-text"></i> Fuentes</a></li>
+  </ul>
+  <div class="nav-actions">
+    <div class="theme-switcher" role="group" aria-label="Modo de color">
+      <button type="button" onclick="setThemeMode('light')" data-theme-button="light">Light</button>
+      <button type="button" onclick="setThemeMode('auto')" data-theme-button="auto">Auto</button>
+      <button type="button" onclick="setThemeMode('dark')" data-theme-button="dark">Dark</button>
+    </div>
+  </div>
+</nav>
+
+<div class="quick-nav" aria-label="Navegación rápida">
+  <div class="quick-nav-inner">
+    <span class="quick-nav-label">Ir a</span>
+    <a class="chip" data-page="inicio" onclick="navigate('inicio')"><i class="bi bi-house-door"></i> Inicio</a>
+    <a class="chip" data-anchor="overview" onclick="scrollToAnchor('overview')"><i class="bi bi-collection"></i> 2° Parcial</a>
+    <a class="chip" data-anchor="primer-parcial" onclick="scrollToAnchor('primer-parcial')"><i class="bi bi-journal-richtext"></i> 1° Parcial</a>
+    <a class="chip" data-anchor="stats" onclick="scrollToAnchor('stats')"><i class="bi bi-bar-chart-fill"></i> Cifras</a>
+    <a class="chip" data-anchor="about-home" onclick="scrollToAnchor('about-home')"><i class="bi bi-person-badge"></i> Diseñador</a>
+    <a class="chip" data-page="geo-economica" onclick="navigate('geo-economica')"><i class="bi bi-cash-coin"></i> Geografía</a>
+    <a class="chip" data-page="desarrollo" onclick="navigate('desarrollo')"><i class="bi bi-recycle"></i> Desarrollo</a>
+    <a class="chip" data-page="fuentes" onclick="navigate('fuentes')"><i class="bi bi-journal-text"></i> Fuentes</a>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     INICIO
+══════════════════════════════════════ -->
+<div id="inicio" class="page active">
+  <div class="hero">
+    <div class="hero-badge"><i class="bi bi-mortarboard"></i> Portafolio de Evidencias — 2° Parcial</div>
+    <h1>Recursos y <span>Necesidades</span><br>de México</h1>
+    <p>Tercer y cuarta subcompetencia del segundo parcial. Análisis del sector agropecuario, industrial, de servicios y política financiera, fiscal y monetaria de México.</p>
+    <div class="btns">
+      <button class="btn" onclick="navigate('agropecuario')"><i class="bi bi-sunlight"></i> Subcompetencia 3</button>
+      <button class="btn btn-outline" onclick="navigate('politica-fin')"><i class="bi bi-bank2"></i> Subcompetencia 4</button>
+    </div>
+  </div>
+
+  <div class="ticker-wrap">
+    <div class="ticker-track">
+      <span>Sector Agropecuario</span><span>Reforma Agraria</span><span>Política Industrial</span><span>Sector Servicios</span>
+      <span>Política Financiera</span><span>Política Fiscal</span><span>Política Monetaria</span><span>Sistema Financiero</span>
+      <span>Sector Agropecuario</span><span>Reforma Agraria</span><span>Política Industrial</span><span>Sector Servicios</span>
+      <span>Política Financiera</span><span>Política Fiscal</span><span>Política Monetaria</span><span>Sistema Financiero</span>
+    </div>
+  </div>
+
+  <!-- Subcompetencias overview -->
+  <section id="overview" class="section-anchor">
+    <div class="container">
+      <div class="section-label"><i class="bi bi-collection"></i> Contenido del Portafolio</div>
+      <h2 class="section-title">Segundo Parcial — Subcompetencias 3 y 4</h2>
+      <p class="section-desc">Este portafolio reúne los temas analizados en clase correspondientes a las últimas dos subcompetencias del segundo parcial de Recursos y Necesidades de México, basados en el libro de José Silvestre Méndez Morales y fuentes estadísticas actuales.</p>
+
+      <div class="cards-grid" style="margin-top:3rem">
+        <!-- Sub 3 A -->
+        <div class="card">
+          <div class="card-icon naranja"><i class="bi bi-sunlight"></i></div>
+          <h3>Sector Agropecuario</h3>
+          <p>Crecimiento histórico, reforma agraria, política agropecuaria y funciones, problemas y soluciones del campo mexicano. Unidad III.</p>
+          <a class="card-link" onclick="navigate('agropecuario')">Ver contenido <i class="bi bi-arrow-right-short"></i></a>
+        </div>
+        <!-- Sub 3 B -->
+        <div class="card">
+          <div class="card-icon verde"><i class="bi bi-hammer"></i></div>
+          <h3>Sector Industrial</h3>
+          <p>Proceso de industrialización desde 1940, política industrial por sexenio, funciones, problemas y soluciones. Unidad IV.</p>
+          <a class="card-link" onclick="navigate('industrial')">Ver contenido <i class="bi bi-arrow-right-short"></i></a>
+        </div>
+        <!-- Sub 3 C -->
+        <div class="card">
+          <div class="card-icon azul"><i class="bi bi-headset"></i></div>
+          <h3>Sector Servicios</h3>
+          <p>Crecimiento del sector terciario, política de servicios, turismo, comercio, salud y educación como motores económicos. Unidad V.</p>
+          <a class="card-link" onclick="navigate('servicios')">Ver contenido <i class="bi bi-arrow-right-short"></i></a>
+        </div>
+        <!-- Sub 4 A -->
+        <div class="card">
+          <div class="card-icon dorado"><i class="bi bi-bank2"></i></div>
+          <h3>Política Financiera y Fiscal</h3>
+          <p>Gasto público, ingresos fiscales, SAT, SHCP y el papel del presupuesto federal en el desarrollo nacional. Unidad VI.</p>
+          <a class="card-link" onclick="navigate('politica-fin')">Ver contenido <i class="bi bi-arrow-right-short"></i></a>
+        </div>
+        <!-- Sub 4 B -->
+        <div class="card">
+          <div class="card-icon verde"><i class="bi bi-currency-exchange"></i></div>
+          <h3>Política Monetaria</h3>
+          <p>Banco de México, control de la inflación, crédito, tipo de cambio y el sistema bancario nacional. Unidad VI.</p>
+          <a class="card-link" onclick="navigate('politica-fin')">Ver contenido <i class="bi bi-arrow-right-short"></i></a>
+        </div>
+        <!-- Sub 4 C -->
+        <div class="card">
+          <div class="card-icon naranja"><i class="bi bi-diagram-3"></i></div>
+          <h3>Sistema Financiero</h3>
+          <p>Estructura del sistema financiero mexicano: banca de desarrollo, comercial, CNBV, BMV y organismos reguladores. Unidad VI.</p>
+          <a class="card-link" onclick="navigate('politica-fin')">Ver contenido <i class="bi bi-arrow-right-short"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="primer-parcial" class="bg-green section-anchor">
+    <div class="container">
+      <div class="section-label"><i class="bi bi-journal-richtext"></i> Primer Parcial</div>
+      <h2 class="section-title">Sección 01 — Contenido del sitio anterior</h2>
+      <p class="section-desc">El portafolio también integra la información del primer parcial que antes estaba en la página anterior: geografía económica, geografía física, sectores productivos, desarrollo sustentable, globalización, proyecto y fuentes.</p>
+
+      <div class="cards-grid" style="margin-top:2.5rem">
+        <div class="card">
+          <div class="card-icon verde"><i class="bi bi-pin-map"></i></div>
+          <h3>Geografía Económica</h3>
+          <p>Estudia la estructura productiva de México, la distribución territorial de las actividades y el impacto de la globalización en el desarrollo regional.</p>
+          <a class="card-link" onclick="navigate('geo-economica')">Ver sección <i class="bi bi-arrow-right-short"></i></a>
+        </div>
+        <div class="card">
+          <div class="card-icon verde"><i class="bi bi-globe-americas"></i></div>
+          <h3>Geografía Física</h3>
+          <p>Resume la diversidad de relieves, climas y ecosistemas que forman la base natural y económica del territorio mexicano.</p>
+          <a class="card-link" onclick="navigate('geo-fisica')">Ver sección <i class="bi bi-arrow-right-short"></i></a>
+        </div>
+        <div class="card">
+          <div class="card-icon verde"><i class="bi bi-boxes"></i></div>
+          <h3>Sectores Económicos</h3>
+          <p>Organiza la actividad productiva en sector primario, secundario y terciario para entender cómo circula la riqueza nacional.</p>
+          <a class="card-link" onclick="navigate('sectores')">Ver sección <i class="bi bi-arrow-right-short"></i></a>
+        </div>
+        <div class="card">
+          <div class="card-icon verde"><i class="bi bi-recycle"></i></div>
+          <h3>Desarrollo Sustentable</h3>
+          <p>Plantea el equilibrio entre progreso económico, bienestar social y protección de la riqueza natural de México.</p>
+          <a class="card-link" onclick="navigate('desarrollo')">Ver sección <i class="bi bi-arrow-right-short"></i></a>
+        </div>
+        <div class="card">
+          <div class="card-icon verde"><i class="bi bi-graph-up"></i></div>
+          <h3>Globalización y Desafíos</h3>
+          <p>Presenta desigualdad, pobreza, mercado laboral y dependencia externa como retos para un crecimiento más equitativo.</p>
+          <a class="card-link" onclick="navigate('desarrollo')">Ver sección <i class="bi bi-arrow-right-short"></i></a>
+        </div>
+        <div class="card">
+          <div class="card-icon verde"><i class="bi bi-person-badge"></i></div>
+          <h3>Sobre el Proyecto</h3>
+          <p>Expone los datos personales y académicos del diseñador, además de la intención del portafolio como recurso de consulta.</p>
+          <a class="card-link" onclick="navigate('sobre')">Ver sección <i class="bi bi-arrow-right-short"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section id="stats" class="bg-green section-anchor">
+    <div class="container">
+      <div class="section-label" style="justify-content:center"><i class="bi bi-bar-chart-fill"></i> Datos Clave de México 2024</div>
+      <h2 class="section-title" style="text-align:center">México en cifras</h2>
+      <div class="stat-grid">
+        <div class="stat-card"><div class="num naranja">3.2%</div><p>Aportación del sector agroalimentario al PIB nacional en 2024</p></div>
+        <div class="stat-card"><div class="num verde">11°</div><p>Lugar de México como productor mundial de cultivos agrícolas</p></div>
+        <div class="stat-card"><div class="num azul">9°</div><p>Exportador mundial del sector agroalimentario en 2024</p></div>
+        <div class="stat-card"><div class="num dorado">196.3M</div><p>Hectáreas de superficie total de México (INEGI, 2022)</p></div>
+        <div class="stat-card"><div class="num naranja">72%</div><p>De unidades productoras que sufrieron siniestros climáticos en 2022</p></div>
+        <div class="stat-card"><div class="num verde">7,795 MDD</div><p>Superávit de la balanza agropecuaria y agroindustrial en 2024</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre -->
+  <section id="about-home" class="section-anchor">
+    <div class="container">
+      <div class="two-col">
+        <div>
+          <div class="section-label"><i class="bi bi-person-badge"></i> Diseñador del Portafolio</div>
+          <h2 class="section-title">Sebastián Eligio Ríos Fuentes</h2>
+          <p class="section-desc">Portafolio de evidencias elaborado como parte de la evaluación de la materia Recursos y Necesidades de México, correspondiente al segundo parcial, cubriendo las subcompetencias 3 y 4, en la Universidad Autónoma de Campeche.</p>
+          <div style="margin-top:1.5rem">
+            <button class="btn" onclick="navigate('sobre')"><i class="bi bi-person-vcard"></i> Ver datos completos</button>
+          </div>
+        </div>
+        <div>
+          <div class="info-box verde">
+            <h4><i class="bi bi-building-fill verde"></i> Datos Académicos</h4>
+            <ul>
+              <li><i class="bi bi-building verde"></i> Universidad Autónoma de Campeche</li>
+              <li><i class="bi bi-tools verde"></i> Facultad de Ingeniería</li>
+              <li><i class="bi bi-cpu verde"></i> Ingeniería en Sistemas Computacionales</li>
+              <li><i class="bi bi-layers verde"></i> 8° Semestre — Grupo A</li>
+              <li><i class="bi bi-journal-bookmark verde"></i> Recursos y Necesidades de México</li>
+              <li><i class="bi bi-person-badge verde"></i> Prof. Julio C. García Fajardo</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo"><i class="bi bi-pin-map-fill"></i> Descubre México</div>
+        <p class="footer-desc">Portafolio de evidencias — Segundo Parcial.<br>Recursos y Necesidades de México · UAC, 2026.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Secciones</h5>
+        <ul>
+          <li><a onclick="navigate('inicio')"><i class="bi bi-house-door"></i> Inicio</a></li>
+          <li><a onclick="navigate('agropecuario')"><i class="bi bi-sunlight"></i> Sector Agropecuario</a></li>
+          <li><a onclick="navigate('industrial')"><i class="bi bi-hammer"></i> Sector Industrial</a></li>
+          <li><a onclick="navigate('servicios')"><i class="bi bi-headset"></i> Sector Servicios</a></li>
+          <li><a onclick="navigate('politica-fin')"><i class="bi bi-bank2"></i> Política Financiera</a></li>
+          <li><a onclick="navigate('sobre')"><i class="bi bi-person-badge"></i> Diseñador</a></li>
+          <li><a onclick="navigate('fuentes')"><i class="bi bi-journal-text"></i> Fuentes APA</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Fuentes Principales</h5>
+        <p>Méndez Morales, J. S. (2012). <em>Problemas económicos de México y sustentabilidad</em> (7ª ed.). McGraw-Hill.</p><br>
+        <p>INEGI. (2023). <em>Censo Agropecuario 2022</em>. <a href="https://www.inegi.org.mx" target="_blank">inegi.org.mx</a></p><br>
+        <p>SADER. (2024). <em>Panorama Agroalimentario 2024</em>. <a href="https://www.gob.mx/sader" target="_blank">gob.mx/sader</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 Sebastián Eligio Ríos Fuentes · Matrícula 64697 · Universidad Autónoma de Campeche</div>
+  </footer>
+</div>
+
+<!-- ══════════════════════════════════════
+     SECTOR AGROPECUARIO  (Unidad III)
+══════════════════════════════════════ -->
+<div id="agropecuario" class="page">
+  <div class="page-hero">
+    <div class="hero-badge" style="background:var(--naranja)"><i class="bi bi-sunlight"></i> Tercera Subcompetencia · Unidad III</div>
+    <h1>Desarrollo y Política Agropecuarios</h1>
+    <p>Crecimiento del sector primario, reforma agraria, política agropecuaria y sus funciones, problemas y soluciones en México.</p>
+  </div>
+
+  <section id="fuentes-home" class="section-anchor">
+    <div class="container">
+      <div class="unit-banner naranja">
+        <div class="unit-num naranja"><i class="bi bi-sunlight"></i> Unidad III — Méndez Morales, cap. 3</div>
+        <h2>Sector Agropecuario Mexicano</h2>
+        <p>El sector agropecuario comprende la agricultura, ganadería, silvicultura y pesca. Históricamente fue el motor de la economía nacional antes de la industrialización. Aunque su participación en el PIB ha disminuido, sigue siendo estratégico para la seguridad alimentaria, el empleo rural y las exportaciones del país.</p>
+      </div>
+
+      <!-- Crecimiento -->
+      <div class="topic-block naranja">
+        <h3><i class="bi bi-graph-up-arrow naranja"></i> 3.1 Crecimiento del Sector Agropecuario</h3>
+        <p>El sector agropecuario mexicano experimentó su mayor dinamismo entre las décadas de 1940 y 1960, periodo conocido como el "milagro mexicano". En esta etapa la agricultura financió la industrialización mediante la exportación de materias primas y alimentos baratos para los trabajadores urbanos.</p>
+        <p>A partir de los años setenta el sector entró en un período de estancamiento y crisis, con tasas de crecimiento inferiores al crecimiento poblacional, lo que generó un creciente déficit alimentario. Las principales ramas del sector son: <strong>agricultura, ganadería, silvicultura y pesca</strong>.</p>
+        <div class="tags">
+          <span class="tag naranja"><i class="bi bi-crop"></i> Agricultura</span>
+          <span class="tag naranja"><i class="bi bi-house-heart"></i> Ganadería</span>
+          <span class="tag naranja"><i class="bi bi-tree-fill"></i> Silvicultura</span>
+          <span class="tag naranja"><i class="bi bi-water"></i> Pesca</span>
+        </div>
+      </div>
+
+      <div class="two-col" style="margin-top:2rem">
+        <div>
+          <div class="info-box naranja">
+            <h4><i class="bi bi-bar-chart naranja"></i> Datos actuales del sector</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right" style="color:var(--naranja)"></i> El sector agroalimentario representó el <strong>3.2% del PIB</strong> en 2024</li>
+              <li><i class="bi bi-chevron-right" style="color:var(--naranja)"></i> México ocupa el <strong>11° lugar</strong> mundial en producción agrícola</li>
+              <li><i class="bi bi-chevron-right" style="color:var(--naranja)"></i> En 2024 fue el <strong>9° exportador</strong> agroalimentario del mundo</li>
+              <li><i class="bi bi-chevron-right" style="color:var(--naranja)"></i> Superávit de <strong>7,795 MDD</strong> en balanza agropecuaria 2024</li>
+              <li><i class="bi bi-chevron-right" style="color:var(--naranja)"></i> El campo perdió <strong>192 mil trabajadores</strong> en un solo año (2024)</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div class="info-box verde">
+            <h4><i class="bi bi-cloud-rain verde"></i> Retos climáticos actuales</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right" style="color:var(--verde)"></i> La sequía fue el principal factor de pérdidas en 2022</li>
+              <li><i class="bi bi-chevron-right" style="color:var(--verde)"></i> El 72.19% de unidades productoras tuvo siniestros climáticos</li>
+              <li><i class="bi bi-chevron-right" style="color:var(--verde)"></i> El 77.8% de productores identifica el clima como su mayor problema</li>
+              <li><i class="bi bi-chevron-right" style="color:var(--verde)"></i> El 24.8% señala la pérdida de fertilidad del suelo</li>
+              <li><i class="bi bi-chevron-right" style="color:var(--verde)"></i> Rendimiento en riego: 94% vs 78% en temporal</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Reforma Agraria -->
+      <div class="topic-block naranja" style="margin-top:2rem">
+        <h3><i class="bi bi-file-earmark-text naranja"></i> 3.2 La Reforma Agraria</h3>
+        <p>La reforma agraria en México es el proceso mediante el cual el Estado distribuyó la tierra entre campesinos y ejidatarios, comenzando con la Revolución Mexicana (1910-1917) y su consagración en el Artículo 27 de la Constitución de 1917.</p>
+        <p>El ejido fue la forma de tenencia colectiva de la tierra predominante hasta las reformas al Artículo 27 en 1992, cuando se permitió la privatización de parcelas ejidales. Esta modificación buscó modernizar el campo pero también implicó la exclusión de comuneros y ejidatarios del modelo de liberalización comercial.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-dot naranja"><i class="bi bi-calendar-event"></i></div>
+          <div class="tl-body">
+            <h4>1917 — Artículo 27 Constitucional</h4>
+            <p>Se establece la base legal de la propiedad de la nación sobre tierra y aguas. Se impulsa el reparto agrario y la creación del ejido.</p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot naranja"><i class="bi bi-calendar-event"></i></div>
+          <div class="tl-body">
+            <h4>1934–1940 — Cárdenas: el gran reparto</h4>
+            <p>El sexenio más activo en distribución de tierras. Se reparten más de 18 millones de hectáreas y se consolida el ejido colectivo.</p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot naranja"><i class="bi bi-calendar-event"></i></div>
+          <div class="tl-body">
+            <h4>1992 — Reforma al Artículo 27</h4>
+            <p>Se termina el reparto agrario y se permite la privatización de tierras ejidales. Cambio estructural vinculado al TLCAN.</p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot verde"><i class="bi bi-calendar-event"></i></div>
+          <div class="tl-body">
+            <h4>2019–2024 — Programa Sectorial SADER</h4>
+            <p>Se plantea la autosuficiencia alimentaria, el rescate del campo y apoyo a pequeños productores mediante programas como Sembrando Vida.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Política agropecuaria -->
+      <div class="topic-block naranja" style="margin-top:2rem">
+        <h3><i class="bi bi-gear-wide-connected naranja"></i> 3.3 Política Agropecuaria</h3>
+        <p>La política agropecuaria es el conjunto de acciones e instrumentos del Estado para regular, fomentar y controlar la producción del sector primario. Sus principales instrumentos son los precios de garantía, los créditos rurales, la infraestructura de riego y los subsidios.</p>
+        <p>Los organismos clave son: la Secretaría de Agricultura y Desarrollo Rural (SADER), la Financiera Rural, ASERCA, FIRA y el INCA Rural. A nivel histórico, el Estado fue el principal promotor del desarrollo agropecuario a través del Banco Nacional de Crédito Rural (Banrural).</p>
+      </div>
+
+      <!-- Funciones, problemas y soluciones -->
+      <div class="topic-block naranja">
+        <h3><i class="bi bi-list-check naranja"></i> 3.4 Funciones, Problemas y Soluciones</h3>
+        <p>El sector agropecuario cumple funciones económicas, sociales y ambientales fundamentales para el país.</p>
+      </div>
+
+      <div class="cards-grid">
+        <div class="card">
+          <div class="card-icon naranja"><i class="bi bi-check2-circle"></i></div>
+          <h3>Funciones del Sector</h3>
+          <ul style="list-style:none; padding:0; margin-top:.5rem">
+            <li style="color:var(--gris); font-size:.87rem; line-height:1.8; display:flex; gap:.5rem"><i class="bi bi-dot" style="color:var(--naranja)"></i>Proveer alimentos a la población</li>
+            <li style="color:var(--gris); font-size:.87rem; line-height:1.8; display:flex; gap:.5rem"><i class="bi bi-dot" style="color:var(--naranja)"></i>Generar divisas por exportación</li>
+            <li style="color:var(--gris); font-size:.87rem; line-height:1.8; display:flex; gap:.5rem"><i class="bi bi-dot" style="color:var(--naranja)"></i>Absorber mano de obra rural</li>
+            <li style="color:var(--gris); font-size:.87rem; line-height:1.8; display:flex; gap:.5rem"><i class="bi bi-dot" style="color:var(--naranja)"></i>Proveer servicios ambientales</li>
+            <li style="color:var(--gris); font-size:.87rem; line-height:1.8; display:flex; gap:.5rem"><i class="bi bi-dot" style="color:var(--naranja)"></i>Preservar biodiversidad cultural</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="card-icon" style="background:#fde8e8; color:var(--rojo)"><i class="bi bi-exclamation-triangle"></i></div>
+          <h3>Principales Problemas</h3>
+          <ul style="list-style:none; padding:0; margin-top:.5rem">
+            <li style="color:var(--gris); font-size:.87rem; line-height:1.8; display:flex; gap:.5rem"><i class="bi bi-dot" style="color:var(--rojo)"></i>Minifundismo improductivo</li>
+            <li style="color:var(--gris); font-size:.87rem; line-height:1.8; display:flex; gap:.5rem"><i class="bi bi-dot" style="color:var(--rojo)"></i>Falta de crédito y tecnología</li>
+            <li style="color:var(--gris); font-size:.87rem; line-height:1.8; display:flex; gap:.5rem"><i class="bi bi-dot" style="color:var(--rojo)"></i>Excesivo intermediarismo</li>
+            <li style="color:var(--gris); font-size:.87rem; line-height:1.8; display:flex; gap:.5rem"><i class="bi bi-dot" style="color:var(--rojo)"></i>Despoblamiento del campo</li>
+            <li style="color:var(--gris); font-size:.87rem; line-height:1.8; display:flex; gap:.5rem"><i class="bi bi-dot" style="color:var(--rojo)"></i>Sequías e impacto climático</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="card-icon verde"><i class="bi bi-lightbulb"></i></div>
+          <h3>Posibles Soluciones</h3>
+          <ul style="list-style:none; padding:0; margin-top:.5rem">
+            <li style="color:var(--gris); font-size:.87rem; line-height:1.8; display:flex; gap:.5rem"><i class="bi bi-dot" style="color:var(--verde)"></i>Créditos baratos y oportunos</li>
+            <li style="color:var(--gris); font-size:.87rem; line-height:1.8; display:flex; gap:.5rem"><i class="bi bi-dot" style="color:var(--verde)"></i>Fomentar agroindustrias rurales</li>
+            <li style="color:var(--gris); font-size:.87rem; line-height:1.8; display:flex; gap:.5rem"><i class="bi bi-dot" style="color:var(--verde)"></i>Eliminar intermediarismo</li>
+            <li style="color:var(--gris); font-size:.87rem; line-height:1.8; display:flex; gap:.5rem"><i class="bi bi-dot" style="color:var(--verde)"></i>Infraestructura de riego</li>
+            <li style="color:var(--gris); font-size:.87rem; line-height:1.8; display:flex; gap:.5rem"><i class="bi bi-dot" style="color:var(--verde)"></i>Desarrollo sustentable integral</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="quote-block naranja" style="margin-top:2.5rem">
+        <p>"En el siglo XXI las principales funciones del campo y la agricultura mexicana deben beneficiar a todo el país: proveer alimentos, ofrecer servicios ambientales, preservar la biodiversidad cultural y contribuir a la gobernabilidad del país."</p>
+        <cite>— Universidad Autónoma de Chapingo, citada por Méndez Morales (2012, Unidad III)</cite>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-grid">
+      <div><div class="footer-logo"><i class="bi bi-pin-map-fill"></i> Descubre México</div><p class="footer-desc">Portafolio de Evidencias · 2° Parcial · UAC 2026.</p></div>
+      <div class="footer-col"><h5>Secciones</h5><ul>
+        <li><a onclick="navigate('inicio')"><i class="bi bi-house-door"></i> Inicio</a></li>
+        <li><a onclick="navigate('industrial')"><i class="bi bi-hammer"></i> Sector Industrial</a></li>
+        <li><a onclick="navigate('servicios')"><i class="bi bi-headset"></i> Sector Servicios</a></li>
+        <li><a onclick="navigate('politica-fin')"><i class="bi bi-bank2"></i> Política Financiera</a></li>
+        <li><a onclick="navigate('fuentes')"><i class="bi bi-journal-text"></i> Fuentes APA</a></li>
+      </ul></div>
+      <div class="footer-col"><h5>Fuente</h5><p>Méndez Morales, J. S. (2012). <em>Problemas económicos de México y sustentabilidad</em> (7ª ed.). McGraw-Hill. Unidades III.</p></div>
+    </div>
+    <div class="footer-bottom">© 2026 Sebastián Eligio Ríos Fuentes · Matrícula 64697 · UAC</div>
+  </footer>
+</div>
+
+<!-- ══════════════════════════════════════
+     SECTOR INDUSTRIAL (Unidad IV)
+══════════════════════════════════════ -->
+<div id="industrial" class="page">
+  <div class="page-hero">
+    <div class="hero-badge" style="background:var(--verde)"><i class="bi bi-hammer"></i> Tercera Subcompetencia · Unidad IV</div>
+    <h1>Desarrollo y Política Industriales</h1>
+    <p>Proceso de industrialización desde 1940, política industrial por sexenio, y funciones, problemas y soluciones del sector secundario.</p>
+  </div>
+
+  <section>
+    <div class="container">
+      <div class="unit-banner verde">
+        <div class="unit-num verde"><i class="bi bi-hammer"></i> Unidad IV — Méndez Morales, cap. 4</div>
+        <h2>Sector Industrial Mexicano</h2>
+        <p>La industria es el conjunto de actividades económicas que transforma recursos naturales y materias primas en bienes elaborados. El sector industrial o secundario es fundamental en la economía moderna y se divide en industria extractiva (minería y petróleo) e industria de transformación (manufacturera, construcción y electricidad).</p>
+      </div>
+
+      <div class="topic-block verde">
+        <h3><i class="bi bi-building-gear verde"></i> 4.1 Crecimiento del Sector Industrial</h3>
+        <p>La industrialización acelerada de México se inició en la década de 1940, impulsada por la política de sustitución de importaciones. Durante la Segunda Guerra Mundial México aprovechó la reducción de las exportaciones industriales de países beligerantes para desarrollar su manufactura interna.</p>
+        <p>Entre 1940 y 1970 el sector industrial creció a tasas superiores al 7% anual. A partir de los años ochenta las crisis económicas, la apertura comercial del TLCAN y la competencia internacional frenaron el dinamismo industrial. Las ramas de mayor dinamismo histórico han sido la industria manufacturera y la construcción.</p>
+        <div class="tags">
+          <span class="tag verde"><i class="bi bi-building-gear"></i> Industria extractiva</span>
+          <span class="tag verde"><i class="bi bi-gear-wide-connected"></i> Manufactura</span>
+          <span class="tag verde"><i class="bi bi-cone-striped"></i> Construcción</span>
+          <span class="tag verde"><i class="bi bi-lightning-charge"></i> Energía eléctrica</span>
+          <span class="tag verde"><i class="bi bi-gem"></i> Minería</span>
+          <span class="tag verde"><i class="bi bi-fuel-pump"></i> Petróleo</span>
+        </div>
+      </div>
+
+      <!-- Bienes industriales -->
+      <div class="cards-grid">
+        <div class="card">
+          <div class="card-icon verde"><i class="bi bi-basket2"></i></div>
+          <h3>Bienes de Consumo No Duradero</h3>
+          <p>Satisfacen necesidades inmediatas: alimentos procesados, bebidas, ropa, calzado. Se agotan con el primer uso.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon verde"><i class="bi bi-layers"></i></div>
+          <h3>Bienes Intermedios</h3>
+          <p>Sirven de insumo para producir otros bienes: acero, vidrio, plástico, productos químicos básicos.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon verde"><i class="bi bi-tv"></i></div>
+          <h3>Bienes de Consumo Duradero</h3>
+          <p>Automóviles, electrodomésticos, muebles. Tienen vida útil prolongada y mayor valor agregado.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon verde"><i class="bi bi-gear-fill"></i></div>
+          <h3>Bienes de Capital</h3>
+          <p>Maquinaria, equipo, herramientas industriales. Usados en el proceso productivo, no en el consumo final.</p>
+        </div>
+      </div>
+
+      <div class="topic-block verde" style="margin-top:2rem">
+        <h3><i class="bi bi-clipboard-data verde"></i> 4.2 La Política Industrial</h3>
+        <p>La política industrial es el conjunto de acciones del Estado para promover, regular y orientar el desarrollo del sector industrial. Sus instrumentos incluyen aranceles, subsidios, exenciones fiscales, financiamiento de la banca de desarrollo y la regulación laboral.</p>
+        <p>Los organismos centrales son: Secretaría de Economía, Secretaría de Energía, ProMéxico (exportaciones), CONACYT (innovación), PEMEX y CFE como empresas productivas del Estado.</p>
+      </div>
+
+      <h3 style="font-family:'Playfair Display',serif; margin:2rem 0 1rem; font-size:1.2rem; color:var(--oscuro)"><i class="bi bi-clock-history" style="color:var(--verde)"></i> Política Industrial por Sexenio</h3>
+
+      <div class="accordion" onclick="toggleAcc(this)">
+        <div class="accordion-header"><div class="acc-left"><i class="bi bi-calendar3" style="color:var(--verde)"></i> 1940–1970: Sustitución de Importaciones</div><i class="bi bi-chevron-down acc-icon"></i></div>
+        <div class="accordion-body"><p>México protegió su industria nacional mediante altos aranceles y cuotas de importación. El Estado invirtió en empresas paraestatales: PEMEX, CFE, Ferronales. La industria manufacturera creció a tasas del 7–8% anual. Este periodo es el de mayor crecimiento industrial sostenido en la historia del país.</p></div>
+      </div>
+      <div class="accordion" onclick="toggleAcc(this)">
+        <div class="accordion-header"><div class="acc-left"><i class="bi bi-calendar3" style="color:var(--verde)"></i> 1970–1982: Expansión con Deuda</div><i class="bi bi-chevron-down acc-icon"></i></div>
+        <div class="accordion-body"><p>Los gobiernos de Echeverría y López Portillo expandieron el gasto público y el endeudamiento externo para impulsar la industria. El auge petrolero (1977–1981) generó un boom industrial que colapsó con la caída de los precios del petróleo en 1982 y la crisis de la deuda.</p></div>
+      </div>
+      <div class="accordion" onclick="toggleAcc(this)">
+        <div class="accordion-header"><div class="acc-left"><i class="bi bi-calendar3" style="color:var(--verde)"></i> 1982–1994: Liberalización y Ajuste</div><i class="bi bi-chevron-down acc-icon"></i></div>
+        <div class="accordion-body"><p>Con De la Madrid y Salinas se aplicaron políticas de ajuste estructural: privatización de empresas paraestatales, reducción de aranceles, ingreso al GATT (1986) y firma del TLCAN (1994). La apertura expuso a la industria nacional a la competencia internacional.</p></div>
+      </div>
+      <div class="accordion" onclick="toggleAcc(this)">
+        <div class="accordion-header"><div class="acc-left"><i class="bi bi-calendar3" style="color:var(--verde)"></i> 1994–Presente: Exportación y Maquila</div><i class="bi bi-chevron-down acc-icon"></i></div>
+        <div class="accordion-body"><p>La industria maquiladora y de exportación se convirtió en el eje del modelo industrial. Las cadenas productivas globales dominan sectores como la automoción, electrónica y aeroespacial. México es uno de los principales exportadores manufactureros de América Latina, aunque con escasos encadenamientos internos.</p></div>
+      </div>
+
+      <div class="topic-block verde" style="margin-top:2rem">
+        <h3><i class="bi bi-list-check verde"></i> 4.3 Funciones, Problemas y Soluciones</h3>
+      </div>
+
+      <div class="three-col" style="margin-top:0">
+        <div class="info-box verde">
+          <h4><i class="bi bi-check2-all verde"></i> Funciones</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right" style="color:var(--verde)"></i>Transformar materias primas en bienes</li>
+            <li><i class="bi bi-chevron-right" style="color:var(--verde)"></i>Generar empleo urbano calificado</li>
+            <li><i class="bi bi-chevron-right" style="color:var(--verde)"></i>Producir divisas de exportación</li>
+            <li><i class="bi bi-chevron-right" style="color:var(--verde)"></i>Impulsar el desarrollo tecnológico</li>
+            <li><i class="bi bi-chevron-right" style="color:var(--verde)"></i>Articular los demás sectores</li>
+          </ul>
+        </div>
+        <div class="info-box" style="background:#fde8e8; border-left:4px solid var(--rojo)">
+          <h4><i class="bi bi-exclamation-triangle" style="color:var(--rojo)"></i> Problemas</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right" style="color:var(--rojo)"></i>Dependencia tecnológica del exterior</li>
+            <li><i class="bi bi-chevron-right" style="color:var(--rojo)"></i>Concentración geográfica (norte y CDMX)</li>
+            <li><i class="bi bi-chevron-right" style="color:var(--rojo)"></i>Escasos encadenamientos internos</li>
+            <li><i class="bi bi-chevron-right" style="color:var(--rojo)"></i>Poco valor agregado nacional</li>
+            <li><i class="bi bi-chevron-right" style="color:var(--rojo)"></i>Informalidad laboral elevada</li>
+          </ul>
+        </div>
+        <div class="info-box verde">
+          <h4><i class="bi bi-lightbulb verde"></i> Soluciones</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right" style="color:var(--verde)"></i>Política industrial activa y de largo plazo</li>
+            <li><i class="bi bi-chevron-right" style="color:var(--verde)"></i>Fomentar I+D y transferencia tecnológica</li>
+            <li><i class="bi bi-chevron-right" style="color:var(--verde)"></i>Desarrollar cadenas de valor nacionales</li>
+            <li><i class="bi bi-chevron-right" style="color:var(--verde)"></i>Descentralizar la actividad industrial</li>
+            <li><i class="bi bi-chevron-right" style="color:var(--verde)"></i>Impulsar la industria sustentable</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-grid">
+      <div><div class="footer-logo"><i class="bi bi-pin-map-fill"></i> Descubre México</div><p class="footer-desc">Portafolio de Evidencias · 2° Parcial · UAC 2026.</p></div>
+      <div class="footer-col"><h5>Secciones</h5><ul>
+        <li><a onclick="navigate('inicio')"><i class="bi bi-house-door"></i> Inicio</a></li>
+        <li><a onclick="navigate('agropecuario')"><i class="bi bi-sunlight"></i> Sector Agropecuario</a></li>
+        <li><a onclick="navigate('servicios')"><i class="bi bi-headset"></i> Sector Servicios</a></li>
+        <li><a onclick="navigate('politica-fin')"><i class="bi bi-bank2"></i> Política Financiera</a></li>
+        <li><a onclick="navigate('fuentes')"><i class="bi bi-journal-text"></i> Fuentes APA</a></li>
+      </ul></div>
+      <div class="footer-col"><h5>Fuente</h5><p>Méndez Morales, J. S. (2012). <em>Problemas económicos de México y sustentabilidad</em> (7ª ed.). McGraw-Hill. Unidad IV.</p></div>
+    </div>
+    <div class="footer-bottom">© 2026 Sebastián Eligio Ríos Fuentes · Matrícula 64697 · UAC</div>
+  </footer>
+</div>
+
+<!-- ══════════════════════════════════════
+     SECTOR SERVICIOS (Unidad V)
+══════════════════════════════════════ -->
+<div id="servicios" class="page">
+  <div class="page-hero">
+    <div class="hero-badge" style="background:var(--azul)"><i class="bi bi-headset"></i> Tercera Subcompetencia · Unidad V</div>
+    <h1>El Sector Servicios</h1>
+    <p>Crecimiento del sector terciario, política de servicios y análisis de sus funciones, problemas y soluciones en México.</p>
+  </div>
+
+  <section>
+    <div class="container">
+      <div class="unit-banner azul">
+        <div class="unit-num azul"><i class="bi bi-headset"></i> Unidad V — Méndez Morales, cap. 5</div>
+        <h2>El Sector Terciario en México</h2>
+        <p>El sector servicios o terciario comprende todas las actividades económicas que no producen bienes materiales sino que ofrecen servicios intangibles a la población y a los demás sectores productivos. Es actualmente el sector de mayor participación en el PIB de México y el principal empleador del país.</p>
+      </div>
+
+      <div class="topic-block azul">
+        <h3><i class="bi bi-graph-up azul"></i> 5.1 Crecimiento del Sector Servicios</h3>
+        <p>El sector servicios experimentó una expansión continua a partir de los años sesenta, conforme México se urbanizó e industrializó. Hoy concentra más del 60% del PIB y del empleo nacional. Su crecimiento está ligado al aumento de la población urbana, la expansión de las clases medias y el desarrollo del turismo y el comercio.</p>
+        <p>El comercio, el turismo, las telecomunicaciones y los servicios financieros son las subsectores de mayor dinamismo en las últimas décadas.</p>
+      </div>
+
+      <div class="cards-grid">
+        <div class="card">
+          <div class="card-icon azul"><i class="bi bi-cart3"></i></div>
+          <h3>Comercio</h3>
+          <p>Es el subsector más grande por volumen de empleo. Incluye comercio al por mayor, al menudeo, tiendas de conveniencia, mercados y plataformas de e-commerce.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon azul"><i class="bi bi-airplane-engines"></i></div>
+          <h3>Turismo</h3>
+          <p>México es uno de los principales destinos turísticos del mundo. El turismo genera divisas, empleos y dinamiza las economías regionales, especialmente en zonas costeras.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon azul"><i class="bi bi-mortarboard"></i></div>
+          <h3>Educación</h3>
+          <p>Servicio público y privado fundamental para el capital humano del país. Incluye educación básica, media superior, superior y capacitación para el trabajo.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon azul"><i class="bi bi-hospital"></i></div>
+          <h3>Salud</h3>
+          <p>IMSS, ISSSTE, SSA y el sector privado conforman el sistema de salud. Pese a avances, persisten grandes desigualdades en el acceso a servicios médicos.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon azul"><i class="bi bi-bank2"></i></div>
+          <h3>Servicios Financieros</h3>
+          <p>Banca, seguros, casas de bolsa y AFORES. El sistema financiero es el motor que canaliza el ahorro hacia la inversión productiva.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon azul"><i class="bi bi-wifi"></i></div>
+          <h3>Telecomunicaciones</h3>
+          <p>Internet, telefonía móvil y televisión digital. Sector de rápido crecimiento y clave para la digitalización de la economía y los servicios públicos.</p>
+        </div>
+      </div>
+
+      <div class="topic-block azul" style="margin-top:2rem">
+        <h3><i class="bi bi-clipboard-data azul"></i> 5.2 La Política de Servicios</h3>
+        <p>La política de servicios incluye regulación, fomento y control de las actividades del sector terciario. Sus objetivos son garantizar el acceso universal a servicios básicos, promover la competencia y regular los monopolios en áreas como telecomunicaciones y energía.</p>
+        <p>Organismos clave: Secretaría de Turismo (SECTUR), SEP, SSA, SHCP (finanzas), IFETEL (telecomunicaciones) y la COFECE (competencia económica).</p>
+      </div>
+
+      <div class="two-col">
+        <div>
+          <div class="topic-block azul">
+            <h3><i class="bi bi-list-check azul"></i> 5.3 Funciones, Problemas y Soluciones</h3>
+            <p>El sector servicios tiene funciones indispensables en la economía moderna, pero también enfrenta serios problemas estructurales.</p>
+          </div>
+          <div class="info-box azul">
+            <h4><i class="bi bi-check2-all azul"></i> Funciones</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right" style="color:var(--azul)"></i>Distribuir bienes y servicios a la población</li>
+              <li><i class="bi bi-chevron-right" style="color:var(--azul)"></i>Generar el mayor volumen de empleo</li>
+              <li><i class="bi bi-chevron-right" style="color:var(--azul)"></i>Captar divisas vía turismo</li>
+              <li><i class="bi bi-chevron-right" style="color:var(--azul)"></i>Intermediar entre producción y consumo</li>
+              <li><i class="bi bi-chevron-right" style="color:var(--azul)"></i>Apoyar los demás sectores económicos</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div class="info-box" style="background:#fde8e8; border-left:4px solid var(--rojo)">
+            <h4><i class="bi bi-exclamation-triangle" style="color:var(--rojo)"></i> Problemas del Sector</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right" style="color:var(--rojo)"></i>Alta informalidad (comercio ambulante)</li>
+              <li><i class="bi bi-chevron-right" style="color:var(--rojo)"></i>Monopolios en telecom y medios</li>
+              <li><i class="bi bi-chevron-right" style="color:var(--rojo)"></i>Acceso desigual a educación y salud</li>
+              <li><i class="bi bi-chevron-right" style="color:var(--rojo)"></i>Concentración en zonas urbanas</li>
+              <li><i class="bi bi-chevron-right" style="color:var(--rojo)"></i>Baja productividad en comercio</li>
+            </ul>
+          </div>
+          <div class="info-box azul" style="margin-top:1rem">
+            <h4><i class="bi bi-lightbulb azul"></i> Soluciones Propuestas</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right" style="color:var(--azul)"></i>Formalizar el comercio ambulante</li>
+              <li><i class="bi bi-chevron-right" style="color:var(--azul)"></i>Regular monopolios y fomentar competencia</li>
+              <li><i class="bi bi-chevron-right" style="color:var(--azul)"></i>Ampliar cobertura de salud y educación</li>
+              <li><i class="bi bi-chevron-right" style="color:var(--azul)"></i>Digitalizar servicios públicos</li>
+              <li><i class="bi bi-chevron-right" style="color:var(--azul)"></i>Descentralizar el turismo nacional</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-grid">
+      <div><div class="footer-logo"><i class="bi bi-pin-map-fill"></i> Descubre México</div><p class="footer-desc">Portafolio de Evidencias · 2° Parcial · UAC 2026.</p></div>
+      <div class="footer-col"><h5>Secciones</h5><ul>
+        <li><a onclick="navigate('inicio')"><i class="bi bi-house-door"></i> Inicio</a></li>
+        <li><a onclick="navigate('agropecuario')"><i class="bi bi-sunlight"></i> S. Agropecuario</a></li>
+        <li><a onclick="navigate('industrial')"><i class="bi bi-hammer"></i> S. Industrial</a></li>
+        <li><a onclick="navigate('politica-fin')"><i class="bi bi-bank2"></i> Política Financiera</a></li>
+        <li><a onclick="navigate('fuentes')"><i class="bi bi-journal-text"></i> Fuentes APA</a></li>
+      </ul></div>
+      <div class="footer-col"><h5>Fuente</h5><p>Méndez Morales, J. S. (2012). <em>Problemas económicos de México y sustentabilidad</em> (7ª ed.). McGraw-Hill. Unidad V.</p></div>
+    </div>
+    <div class="footer-bottom">© 2026 Sebastián Eligio Ríos Fuentes · Matrícula 64697 · UAC</div>
+  </footer>
+</div>
+
+<!-- ══════════════════════════════════════
+     POLÍTICA FINANCIERA, FISCAL Y MONETARIA (Unidad VI)
+══════════════════════════════════════ -->
+<div id="politica-fin" class="page">
+  <div class="page-hero">
+    <div class="hero-badge" style="background:var(--dorado); color:var(--oscuro)"><i class="bi bi-bank2"></i> Cuarta Subcompetencia · Unidad VI</div>
+    <h1>Política Financiera, Fiscal y Monetaria</h1>
+    <p>El conjunto de instrumentos del Estado para regular el ingreso, el gasto público, el crédito y la estabilidad monetaria de México.</p>
+  </div>
+
+  <section>
+    <div class="container">
+      <div class="unit-banner dorado">
+        <div class="unit-num dorado"><i class="bi bi-bank2"></i> Unidad VI — Méndez Morales, cap. 6</div>
+        <h2>Instrumentos de Política Económica</h2>
+        <p>La política económica del Estado mexicano se expresa principalmente a través de tres grandes instrumentos: la política financiera (gasto público), la política fiscal (ingresos tributarios) y la política monetaria y crediticia (dinero, crédito y tasas de interés). Los tres conforman el marco macroeconómico en que opera la economía nacional.</p>
+      </div>
+
+      <!-- 6.1 Política Financiera -->
+      <div class="topic-block dorado">
+        <h3><i class="bi bi-cash-stack dorado"></i> 6.1 Política Financiera (Gasto Público)</h3>
+        <p>La política financiera es el conjunto de acciones del Estado relacionadas con la obtención y el ejercicio de recursos públicos. Su instrumento central es el <strong>Presupuesto de Egresos de la Federación</strong>, que determina cuánto y en qué se gasta el gobierno cada año.</p>
+        <p>Su objetivo es promover el crecimiento económico, financiar los servicios públicos (educación, salud, infraestructura), redistribuir el ingreso y crear fuentes de empleo. La SHCP es la dependencia rectora de la política financiera y de gasto público.</p>
+      </div>
+
+      <div class="cards-grid">
+        <div class="card">
+          <div class="card-icon dorado"><i class="bi bi-building-fill"></i></div>
+          <h3>SHCP</h3>
+          <p>Secretaría de Hacienda y Crédito Público. Rectora de la política financiera. Elabora el presupuesto, establece la política fiscal y dirige la política monetaria y crediticia.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon dorado"><i class="bi bi-eye"></i></div>
+          <h3>SFP</h3>
+          <p>Secretaría de la Función Pública. Controla el presupuesto de egresos, evalúa programas de gasto y combate la corrupción en el uso de recursos públicos.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon dorado"><i class="bi bi-pie-chart"></i></div>
+          <h3>Presupuesto Federal</h3>
+          <p>Distribuye los recursos entre gasto corriente (servicios, sueldos) y gasto de capital (inversión en infraestructura). El gasto social incluye salud, educación y desarrollo social.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon dorado"><i class="bi bi-graph-down-arrow"></i></div>
+          <h3>Déficit y Deuda</h3>
+          <p>Cuando el gasto público supera los ingresos se genera déficit. Su financiamiento mediante deuda es un problema estructural que limita el margen de acción del Estado.</p>
+        </div>
+      </div>
+
+      <!-- 6.2 Política Fiscal -->
+      <div class="topic-block dorado" style="margin-top:2rem">
+        <h3><i class="bi bi-receipt dorado"></i> 6.2 Política Fiscal</h3>
+        <p>La política fiscal es el conjunto de instrumentos que utiliza el Estado para obtener ingresos, principalmente a través de impuestos. Su objetivo es financiar el gasto público, redistribuir el ingreso y desincentivar actividades nocivas.</p>
+        <p>Los principales instrumentos son: ISR (Impuesto sobre la Renta), IVA (Impuesto al Valor Agregado), IEPS (Impuesto Especial sobre Producción y Servicios) y los ingresos petroleros de PEMEX. El SAT (Servicio de Administración Tributaria) es la entidad encargada de la recaudación.</p>
+      </div>
+
+      <div class="two-col">
+        <div>
+          <div class="info-box dorado">
+            <h4><i class="bi bi-cash-coin dorado"></i> Fuentes de Ingreso Público</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right" style="color:var(--dorado)"></i>Impuestos directos: ISR, empresas y personas físicas</li>
+              <li><i class="bi bi-chevron-right" style="color:var(--dorado)"></i>Impuestos indirectos: IVA, IEPS</li>
+              <li><i class="bi bi-chevron-right" style="color:var(--dorado)"></i>Ingresos petroleros: PEMEX y derechos</li>
+              <li><i class="bi bi-chevron-right" style="color:var(--dorado)"></i>Ganancias de empresas del sector público</li>
+              <li><i class="bi bi-chevron-right" style="color:var(--dorado)"></i>Deuda pública interna y externa</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div class="info-box dorado">
+            <h4><i class="bi bi-bar-chart dorado"></i> Principales Problemas Fiscales</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right" style="color:var(--dorado)"></i>Baja recaudación respecto al PIB (vs. OCDE)</li>
+              <li><i class="bi bi-chevron-right" style="color:var(--dorado)"></i>Alta dependencia de ingresos petroleros</li>
+              <li><i class="bi bi-chevron-right" style="color:var(--dorado)"></i>Evasión y elusión fiscal generalizada</li>
+              <li><i class="bi bi-chevron-right" style="color:var(--dorado)"></i>Economía informal sin fiscalización</li>
+              <li><i class="bi bi-chevron-right" style="color:var(--dorado)"></i>Regresividad de algunos impuestos</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6.3 Política Monetaria -->
+      <div class="topic-block dorado" style="margin-top:1rem">
+        <h3><i class="bi bi-currency-exchange dorado"></i> 6.3 Política Monetaria y Crediticia</h3>
+        <p>La política monetaria es el conjunto de medidas que el Banco de México aplica para controlar la cantidad de dinero en circulación, el crédito y las tasas de interés, con el objetivo principal de mantener la estabilidad de precios (control de la inflación).</p>
+        <p>Desde 1994 el Banco de México es autónomo del gobierno federal. Su principal instrumento de política monetaria es la tasa de interés de referencia (tasa objetivo). También regula el encaje legal, la emisión de billetes y la política cambiaria.</p>
+      </div>
+
+      <div class="desafios-grid" style="background:var(--oscuro); padding:2rem; border-radius:12px">
+        <div class="desafio-card">
+          <h4><i class="bi bi-building-fill"></i> Banco de México</h4>
+          <p>Banco central autónomo desde 1994. Emite moneda, regula el sistema financiero, controla la inflación mediante la tasa de referencia y administra las reservas internacionales.</p>
+        </div>
+        <div class="desafio-card">
+          <h4><i class="bi bi-percent"></i> Tasa de Referencia</h4>
+          <p>Principal instrumento de política monetaria. Al subirla se encarece el crédito y se reduce la inflación; al bajarla se estimula la economía. Es el termómetro del dinero.</p>
+        </div>
+        <div class="desafio-card">
+          <h4><i class="bi bi-arrow-left-right"></i> Tipo de Cambio</h4>
+          <p>El peso mexicano opera bajo un régimen de tipo de cambio flexible. Banxico interviene ocasionalmente para evitar volatilidad excesiva que afecte la estabilidad económica.</p>
+        </div>
+        <div class="desafio-card">
+          <h4><i class="bi bi-shield-check"></i> Reservas Internacionales</h4>
+          <p>México mantiene reservas en divisas y oro como respaldo de la moneda y colchón ante choques externos. Son un indicador de fortaleza financiera del país.</p>
+        </div>
+      </div>
+
+      <!-- 6.4 Sistema Financiero -->
+      <div class="topic-block dorado" style="margin-top:2rem">
+        <h3><i class="bi bi-diagram-3 dorado"></i> 6.4 El Sistema Financiero Mexicano</h3>
+        <p>El sistema financiero es el conjunto de instituciones, instrumentos y mercados que intermedian entre ahorradores e inversionistas. Su función es canalizar el ahorro hacia la inversión productiva, facilitando el financiamiento de empresas, gobierno y familias.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-dot dorado"><i class="bi bi-bank2"></i></div>
+          <div class="tl-body">
+            <h4>Banco de México (Banxico)</h4>
+            <p>Banco central autónomo. Regula el sistema monetario y financiero, emite billetes y monedas y administra la política cambiaria y de reservas.</p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot dorado"><i class="bi bi-buildings"></i></div>
+          <div class="tl-body">
+            <h4>Banca Comercial</h4>
+            <p>BBVA, Citibanamex, Santander, Banorte, HSBC. Captan depósitos y otorgan créditos al consumo, hipotecas y préstamos empresariales. Supervisadas por la CNBV.</p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot dorado"><i class="bi bi-briefcase-fill"></i></div>
+          <div class="tl-body">
+            <h4>Banca de Desarrollo</h4>
+            <p>NAFIN, Banobras, Bancomext, Banjército. Financian proyectos de largo plazo que la banca privada no atiende: infraestructura, exportaciones, sector social y microempresas.</p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot dorado"><i class="bi bi-graph-up-arrow"></i></div>
+          <div class="tl-body">
+            <h4>Bolsa Mexicana de Valores (BMV)</h4>
+            <p>Mercado donde empresas captan capital emitiendo acciones y deuda. Es el principal mercado de valores del país y un indicador del estado de la economía.</p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot dorado"><i class="bi bi-shield-fill-check"></i></div>
+          <div class="tl-body">
+            <h4>CNBV — Comisión Nacional Bancaria y de Valores</h4>
+            <p>Regula y supervisa el sistema bancario y bursátil. Protege los depósitos de los ahorradores mediante el IPAB y garantiza la solvencia del sistema financiero.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="quote-block dorado">
+        <p>"La política financiera de gasto público no ha logrado satisfacer las necesidades de la mayoría de la población, pues se orienta fundamentalmente a dar estabilidad al sistema y no al bienestar social."</p>
+        <cite>— Méndez Morales, J. S. (2012). Unidad VI, p. 212.</cite>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-grid">
+      <div><div class="footer-logo"><i class="bi bi-pin-map-fill"></i> Descubre México</div><p class="footer-desc">Portafolio de Evidencias · 2° Parcial · UAC 2026.</p></div>
+      <div class="footer-col"><h5>Secciones</h5><ul>
+        <li><a onclick="navigate('inicio')"><i class="bi bi-house-door"></i> Inicio</a></li>
+        <li><a onclick="navigate('agropecuario')"><i class="bi bi-sunlight"></i> S. Agropecuario</a></li>
+        <li><a onclick="navigate('industrial')"><i class="bi bi-hammer"></i> S. Industrial</a></li>
+        <li><a onclick="navigate('servicios')"><i class="bi bi-headset"></i> S. Servicios</a></li>
+        <li><a onclick="navigate('fuentes')"><i class="bi bi-journal-text"></i> Fuentes APA</a></li>
+      </ul></div>
+      <div class="footer-col"><h5>Fuente</h5><p>Méndez Morales, J. S. (2012). <em>Problemas económicos de México y sustentabilidad</em> (7ª ed.). McGraw-Hill. Unidad VI.</p></div>
+    </div>
+    <div class="footer-bottom">© 2026 Sebastián Eligio Ríos Fuentes · Matrícula 64697 · UAC</div>
+  </footer>
+</div>
+
+<!-- ══════════════════════════════════════
+     PÁGINAS ANTERIORES (Geo Económica, Geo Física, Des. Sustentable, Sectores)
+     — Se mantienen resumidas con navegación
+══════════════════════════════════════ -->
+<div id="geo-economica" class="page">
+  <div class="page-hero">
+    <div class="hero-badge"><i class="bi bi-cash-coin"></i> Primera Subcompetencia · Unidad I</div>
+    <h1>Geografía Económica de México</h1>
+    <p>Análisis integral del territorio y la estructura productiva nacional.</p>
+  </div>
+  <section><div class="container">
+    <div class="unit-banner verde"><div class="unit-num verde"><i class="bi bi-cash-coin"></i> Unidad I</div>
+      <h2>Geografía Económica</h2>
+      <p>La geografía económica estudia la relación entre los recursos naturales, la población y las actividades económicas en México, analizando cómo la distribución territorial determina la producción y el consumo.</p>
+    </div>
+    <div class="cards-grid">
+      <div class="card"><div class="card-icon verde"><i class="bi bi-pin-map"></i></div><h3>Economía y Territorio</h3><p>Las actividades se localizan según las ventajas competitivas regionales. El norte concentra industrias de exportación; el sur, actividades primarias.</p></div>
+      <div class="card"><div class="card-icon verde"><i class="bi bi-person-workspace"></i></div><h3>PEA</h3><p>Población Económicamente Activa: personas de 15+ años que trabajan o buscan empleo. Indicador clave del sistema productivo.</p></div>
+      <div class="card"><div class="card-icon verde"><i class="bi bi-boxes"></i></div><h3>Sectores Productivos</h3><p>Primario, secundario y terciario, organizados según el método de obtención y transformación de recursos.</p><a class="card-link" onclick="navigate('sectores')">Ver sectores <i class="bi bi-arrow-right-short"></i></a></div>
+    </div>
+  </div></section>
+  <footer><div class="footer-grid"><div><div class="footer-logo"><i class="bi bi-pin-map-fill"></i> Descubre México</div></div><div class="footer-col"><h5>Secciones</h5><ul><li><a onclick="navigate('inicio')"><i class="bi bi-house-door"></i> Inicio</a></li></ul></div><div class="footer-col"><h5>Fuente</h5><p>Méndez Morales (2012). Unidad I.</p></div></div><div class="footer-bottom">© 2026 Sebastián Eligio Ríos Fuentes · UAC</div></footer>
+</div>
+
+<div id="geo-fisica" class="page">
+  <div class="page-hero">
+    <div class="hero-badge"><i class="bi bi-tsunami"></i> Primera Subcompetencia · Unidad I</div>
+    <h1>Geografía Física de México</h1>
+    <p>Relieve, hidrografía, climas, suelos y biodiversidad del territorio nacional.</p>
+  </div>
+  <section><div class="container">
+    <div class="unit-banner verde"><div class="unit-num verde"><i class="bi bi-tsunami"></i> Unidad I — Geografía Física</div>
+      <h2>Elementos Naturales de México</h2>
+      <p>La geografía física analiza los elementos naturales del territorio. México se ubica en América del Norte con 1,964,375 km², y presenta una gran diversidad de relieves, climas y ecosistemas.</p>
+    </div>
+    <div class="cards-grid">
+      <div class="card"><div class="card-icon verde"><i class="bi bi-globe-americas"></i></div><h3>Localización</h3><p>Continente americano. Limita al norte con EE.UU., al sureste con Guatemala y Belice, bañado por el Pacífico y el Golfo de México.</p></div>
+      <div class="card"><div class="card-icon verde"><i class="bi bi-tsunami"></i></div><h3>Relieve</h3><p>Sierra Madre Occidental, Oriental y del Sur, Eje Volcánico Transversal, llanuras y costas.</p></div>
+      <div class="card"><div class="card-icon verde"><i class="bi bi-water"></i></div><h3>Hidrografía</h3><p>Ríos Bravo, Lerma, Balsas, Grijalva y Usumacinta. Recursos hídricos para riego, energía y abastecimiento.</p></div>
+      <div class="card"><div class="card-icon verde"><i class="bi bi-thermometer-sun"></i></div><h3>Climas</h3><p>Gran diversidad climática: cálidos, templados, secos y semifríos, que determinan la distribución de actividades productivas.</p></div>
+    </div>
+  </div></section>
+  <footer><div class="footer-grid"><div><div class="footer-logo"><i class="bi bi-pin-map-fill"></i> Descubre México</div></div><div class="footer-col"><h5>Secciones</h5><ul><li><a onclick="navigate('inicio')"><i class="bi bi-house-door"></i> Inicio</a></li></ul></div><div class="footer-col"><h5>Fuente</h5><p>Méndez Morales (2012). Unidad I.</p></div></div><div class="footer-bottom">© 2026 Sebastián Eligio Ríos Fuentes · UAC</div></footer>
+</div>
+
+<div id="desarrollo" class="page">
+  <div class="page-hero">
+    <div class="hero-badge"><i class="bi bi-recycle"></i> Segunda Subcompetencia · Unidad II</div>
+    <h1>Desarrollo Sustentable del País</h1>
+    <p>Crecimiento económico, aspectos sociales y sustentabilidad ambiental de México.</p>
+  </div>
+  <section><div class="container">
+    <div class="unit-banner verde"><div class="unit-num verde"><i class="bi bi-recycle"></i> Unidad II</div>
+      <h2>Desarrollo Sustentable</h2>
+      <p>El desarrollo sustentable busca satisfacer las necesidades actuales sin comprometer las de generaciones futuras. Implica el equilibrio entre crecimiento económico, bienestar social y protección del medio ambiente.</p>
+    </div>
+    <div class="cards-grid">
+      <div class="card"><div class="card-icon verde"><i class="bi bi-graph-up-arrow"></i></div><h3>Crecimiento Económico</h3><p>Aumento sostenido del PIB con distribución equitativa del ingreso y reducción de la pobreza.</p></div>
+      <div class="card"><div class="card-icon verde"><i class="bi bi-heart-pulse"></i></div><h3>Aspectos Sociales</h3><p>Educación, salud, vivienda y bienestar como indicadores del desarrollo socioeconómico real.</p></div>
+      <div class="card"><div class="card-icon verde"><i class="bi bi-tree"></i></div><h3>Medio Ambiente</h3><p>Protección de ecosistemas, reducción de la deforestación y gestión sustentable de recursos naturales.</p></div>
+    </div>
+    <div class="desafios-grid" style="background:var(--oscuro); padding:2rem; border-radius:12px; margin-top:2rem">
+      <div class="desafio-card"><h4><i class="bi bi-distribute-vertical"></i> Desigualdad</h4><p>Brecha profunda en distribución del ingreso que limita el acceso a servicios básicos.</p></div>
+      <div class="desafio-card"><h4><i class="bi bi-house-x"></i> Pobreza</h4><p>Persistencia de la pobreza extrema especialmente en zonas rurales e indígenas.</p></div>
+      <div class="desafio-card"><h4><i class="bi bi-briefcase-x"></i> Empleo</h4><p>Alta informalidad y bajas remuneraciones frenan el desarrollo interno.</p></div>
+      <div class="desafio-card"><h4><i class="bi bi-link-45deg"></i> Dependencia</h4><p>Vulnerabilidad ante choques externos por falta de diversificación productiva.</p></div>
+    </div>
+  </div></section>
+  <footer><div class="footer-grid"><div><div class="footer-logo"><i class="bi bi-pin-map-fill"></i> Descubre México</div></div><div class="footer-col"><h5>Secciones</h5><ul><li><a onclick="navigate('inicio')"><i class="bi bi-house-door"></i> Inicio</a></li></ul></div><div class="footer-col"><h5>Fuente</h5><p>Méndez Morales (2012). Unidad II.</p></div></div><div class="footer-bottom">© 2026 Sebastián Eligio Ríos Fuentes · UAC</div></footer>
+</div>
+
+<div id="sectores" class="page">
+  <div class="page-hero">
+    <div class="hero-badge"><i class="bi bi-boxes"></i> Primera Subcompetencia · Unidad I</div>
+    <h1>Sectores Económicos</h1>
+    <p>Primario, secundario y terciario: las tres grandes divisiones de la actividad productiva de México.</p>
+  </div>
+  <section><div class="container">
+    <div class="two-col" style="margin-bottom:2rem">
+      <div>
+        <div class="topic-block naranja"><h3><i class="bi bi-sunlight naranja"></i> Sector Primario</h3>
+          <p>Obtención directa de recursos de la naturaleza sin transformación industrial. Motor que provee materias primas esenciales.</p>
+          <div class="tags"><span class="tag naranja"><i class="bi bi-crop"></i> Agricultura</span><span class="tag naranja"><i class="bi bi-water"></i> Pesca</span><span class="tag naranja"><i class="bi bi-gem"></i> Minería</span><span class="tag naranja"><i class="bi bi-tree-fill"></i> Silvicultura</span></div>
+        </div>
+        <div class="topic-block verde"><h3><i class="bi bi-hammer verde"></i> Sector Secundario</h3>
+          <p>Transformación de materias primas en productos elaborados con mayor valor agregado.</p>
+          <div class="tags"><span class="tag verde"><i class="bi bi-building-gear"></i> Industria</span><span class="tag verde"><i class="bi bi-cone-striped"></i> Construcción</span><span class="tag verde"><i class="bi bi-lightning-charge"></i> Energía</span></div>
+        </div>
+      </div>
+      <div>
+        <div class="topic-block azul"><h3><i class="bi bi-headset azul"></i> Sector Terciario</h3>
+          <p>Servicios intangibles esenciales para la sociedad. Hoy es el sector más grande de la economía mexicana.</p>
+          <div class="tags"><span class="tag azul"><i class="bi bi-cart3"></i> Comercio</span><span class="tag azul"><i class="bi bi-airplane-engines"></i> Turismo</span><span class="tag azul"><i class="bi bi-mortarboard"></i> Educación</span><span class="tag azul"><i class="bi bi-hospital"></i> Salud</span><span class="tag azul"><i class="bi bi-bank2"></i> Finanzas</span></div>
+        </div>
+        <div class="info-box verde" style="margin-top:1rem">
+          <h4><i class="bi bi-info-circle verde"></i> Interdependencia sectorial</h4>
+          <p>Los tres sectores operan como una red: el primario provee materias primas al secundario, que produce bienes que el terciario distribuye y comercializa. La ruptura de este ciclo genera crisis económicas.</p>
+        </div>
+      </div>
+    </div>
+  </div></section>
+  <footer><div class="footer-grid"><div><div class="footer-logo"><i class="bi bi-pin-map-fill"></i> Descubre México</div></div><div class="footer-col"><h5>Secciones</h5><ul><li><a onclick="navigate('inicio')"><i class="bi bi-house-door"></i> Inicio</a></li></ul></div><div class="footer-col"><h5>Fuente</h5><p>Méndez Morales (2012). Unidad I.</p></div></div><div class="footer-bottom">© 2026 Sebastián Eligio Ríos Fuentes · UAC</div></footer>
+</div>
+
+<!-- ══════════════════════════════════════
+     SOBRE EL DISEÑADOR
+══════════════════════════════════════ -->
+<div id="sobre" class="page">
+  <div class="page-hero">
+    <div class="hero-badge"><i class="bi bi-person-badge"></i> Datos del Diseñador</div>
+    <h1>Sebastián Eligio Ríos Fuentes</h1>
+    <p>Estudiante de Ingeniería en Sistemas Computacionales, diseñador de este portafolio de evidencias.</p>
+  </div>
+
+  <section>
+    <div class="container">
+      <div class="two-col">
+        <div>
+          <div class="section-label"><i class="bi bi-person-vcard"></i> Perfil del Diseñador</div>
+          <h2 class="section-title">Acerca del Portafolio</h2>
+          <p class="section-desc">Este portafolio de evidencias fue diseñado y desarrollado como proyecto académico de la materia Recursos y Necesidades de México del segundo parcial. Comprende las subcompetencias 3 y 4, abordando el desarrollo agropecuario, industrial, de servicios y la política financiera, fiscal y monetaria de México.</p>
+          <p class="section-desc" style="margin-top:1rem">La plataforma fue construida con HTML5, CSS3 y JavaScript puro, utilizando la biblioteca de íconos Bootstrap Icons v1.11.3 y Google Fonts (Playfair Display + DM Sans). El diseño responde a criterios de usabilidad, navegación intuitiva y presentación académica profesional.</p>
+
+          <div class="info-box verde" style="margin-top:2rem">
+            <h4><i class="bi bi-code-slash verde"></i> Tecnologías Utilizadas</h4>
+            <ul>
+              <li><i class="bi bi-filetype-html" style="color:var(--verde)"></i> HTML5 semántico</li>
+              <li><i class="bi bi-filetype-css" style="color:var(--verde)"></i> CSS3 con variables y grid</li>
+              <li><i class="bi bi-filetype-js" style="color:var(--verde)"></i> JavaScript vanilla (SPA navigation)</li>
+              <li><i class="bi bi-bootstrap" style="color:var(--verde)"></i> Bootstrap Icons 1.11.3</li>
+              <li><i class="bi bi-fonts" style="color:var(--verde)"></i> Google Fonts (Playfair Display + DM Sans)</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div class="profile-card">
+            <div class="profile-avatar"><i class="bi bi-person-fill"></i></div>
+            <h3>Sebastián Eligio Ríos Fuentes</h3>
+            <div class="subtitle">Estudiante · ISC · UAC</div>
+
+            <div class="profile-row"><i class="bi bi-hash"></i><span>Matrícula: <strong style="color:var(--blanco)">64697</strong></span></div>
+            <div class="profile-row"><i class="bi bi-envelope-at"></i><span>al064697@uacam.mx</span></div>
+            <div class="profile-row"><i class="bi bi-building-fill"></i><span>Universidad Autónoma de Campeche</span></div>
+            <div class="profile-row"><i class="bi bi-tools"></i><span>Facultad de Ingeniería</span></div>
+            <div class="profile-row"><i class="bi bi-cpu"></i><span>Ingeniería en Sistemas Computacionales</span></div>
+            <div class="profile-row"><i class="bi bi-layers"></i><span>8° Semestre — Grupo A</span></div>
+            <div class="profile-row"><i class="bi bi-journal-bookmark"></i><span>Recursos y Necesidades de México</span></div>
+            <div class="profile-row"><i class="bi bi-person-badge"></i><span>Profesor: Julio C. García Fajardo</span></div>
+            <div class="profile-row"><i class="bi bi-calendar3"></i><span>Periodo: Enero–Junio 2026</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-grid">
+      <div><div class="footer-logo"><i class="bi bi-pin-map-fill"></i> Descubre México</div><p class="footer-desc">Portafolio de Evidencias · 2° Parcial · UAC 2026.</p></div>
+      <div class="footer-col"><h5>Secciones</h5><ul>
+        <li><a onclick="navigate('inicio')"><i class="bi bi-house-door"></i> Inicio</a></li>
+        <li><a onclick="navigate('agropecuario')"><i class="bi bi-sunlight"></i> S. Agropecuario</a></li>
+        <li><a onclick="navigate('industrial')"><i class="bi bi-hammer"></i> S. Industrial</a></li>
+        <li><a onclick="navigate('servicios')"><i class="bi bi-headset"></i> S. Servicios</a></li>
+        <li><a onclick="navigate('politica-fin')"><i class="bi bi-bank2"></i> Política Financiera</a></li>
+        <li><a onclick="navigate('fuentes')"><i class="bi bi-journal-text"></i> Fuentes APA</a></li>
+      </ul></div>
+      <div class="footer-col"><h5>Contacto</h5><p>al064697@uacam.mx<br>Universidad Autónoma de Campeche<br>Facultad de Ingeniería<br>ISC — 8° Semestre, 2026.</p></div>
+    </div>
+    <div class="footer-bottom">© 2026 Sebastián Eligio Ríos Fuentes · Matrícula 64697 · UAC</div>
+  </footer>
+</div>
+
+<!-- ══════════════════════════════════════
+     FUENTES APA
+══════════════════════════════════════ -->
+<div id="fuentes" class="page">
+  <div class="page-hero">
+    <div class="hero-badge"><i class="bi bi-journal-text"></i> Referencias Bibliográficas</div>
+    <h1>Fuentes de Información</h1>
+    <p>Referencias en formato APA de textos e imágenes utilizadas en este portafolio de evidencias.</p>
+  </div>
+
+  <section>
+    <div class="container" style="max-width:860px">
+      <div class="section-label"><i class="bi bi-book-fill"></i> Fuentes Bibliográficas</div>
+      <h2 class="section-title">Bibliografía — Formato APA 7ª Edición</h2>
+      <p class="section-desc" style="margin-bottom:2.5rem">Todas las fuentes están citadas conforme a la norma APA séptima edición, empleadas para los contenidos académicos y estadísticos de este portafolio.</p>
+
+      <div class="cards-grid" style="margin-bottom:2rem">
+        <div class="card">
+          <div class="card-icon dorado"><i class="bi bi-journal-richtext"></i></div>
+          <h3>Subcompetencias anteriores</h3>
+          <p>Resumen de las subcompetencias 1 y 2, con geografía económica, geografía física, desarrollo sustentable y sectores productivos.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon verde"><i class="bi bi-link-45deg"></i></div>
+          <h3>Recursos del sitio</h3>
+          <p>HTML, CSS y JavaScript separados en módulos, con navegación interna, acordeones y secciones reutilizables.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon azul"><i class="bi bi-info-circle"></i></div>
+          <h3>Subcompetencias actuales</h3>
+          <p>Las subcompetencias 3 y 4 siguen en las secciones principales del portafolio: sector agropecuario, industrial, servicios y política financiera.</p>
+        </div>
+      </div>
+
+      <!-- LIBRO BASE -->
+      <h3 style="font-family:'Playfair Display',serif; font-size:1.05rem; color:var(--oscuro); margin-bottom:1rem; display:flex; align-items:center; gap:.5rem"><i class="bi bi-book-fill" style="color:var(--dorado)"></i> Texto base</h3>
+      <div class="fuente-item">
+        <i class="bi bi-book-half fuente-ico"></i>
+        <p>Méndez Morales, J. S. (2012). <em>Problemas económicos de México y sustentabilidad</em> (7ª ed.). McGraw-Hill/Interamericana Editores. ISBN: 978-607-15-0738-9.</p>
+      </div>
+
+      <!-- ESTADÍSTICAS -->
+      <h3 style="font-family:'Playfair Display',serif; font-size:1.05rem; color:var(--oscuro); margin:1.75rem 0 1rem; display:flex; align-items:center; gap:.5rem"><i class="bi bi-bar-chart-fill" style="color:var(--dorado)"></i> Fuentes estadísticas</h3>
+      <div class="fuente-item">
+        <i class="bi bi-bar-chart-line-fill fuente-ico"></i>
+        <p>INEGI. (2023). <em>Resultados definitivos del Censo Agropecuario 2022</em>. Instituto Nacional de Estadística y Geografía. <a href="https://www.inegi.org.mx/contenidos/saladeprensa/boletines/2023/CA_Def/CA_Def2022.pdf" target="_blank">https://www.inegi.org.mx</a></p>
+      </div>
+      <div class="fuente-item">
+        <i class="bi bi-bar-chart-line-fill fuente-ico"></i>
+        <p>INEGI. (2024, marzo). <em>A propósito del Día Mundial del Agua: el sector agropecuario y el agua</em>. Comunicado de prensa núm. 196/24. Instituto Nacional de Estadística y Geografía. <a href="https://inegi.org.mx/contenidos/saladeprensa/aproposito/2024/EAP_DiaMundAgua.pdf" target="_blank">https://www.inegi.org.mx</a></p>
+      </div>
+      <div class="fuente-item">
+        <i class="bi bi-bank2 fuente-ico"></i>
+        <p>Secretaría de Economía. (2023). <em>Economía de México: información estadística y sectorial</em>. Gobierno de México. <a href="https://www.gob.mx/se" target="_blank">https://www.gob.mx/se</a></p>
+      </div>
+      <div class="fuente-item">
+        <i class="bi bi-bank2 fuente-ico"></i>
+        <p>Secretaría de Agricultura y Desarrollo Rural (SADER). (2024). <em>Panorama Agroalimentario 2024</em>. Gobierno de México. <a href="https://www.gob.mx/sader" target="_blank">https://www.gob.mx/sader</a></p>
+      </div>
+      <div class="fuente-item">
+        <i class="bi bi-bank2 fuente-ico"></i>
+        <p>Secretaría de Agricultura y Desarrollo Rural (SADER). (2020). <em>Programa Sectorial de Agricultura y Desarrollo Rural 2020–2024</em>. Diario Oficial de la Federación, 25 de junio de 2020. <a href="https://www.agricultura.gob.mx" target="_blank">https://www.agricultura.gob.mx</a></p>
+      </div>
+      <div class="fuente-item">
+        <i class="bi bi-bar-chart-line-fill fuente-ico"></i>
+        <p>Consejo Nacional Agropecuario (CNA). (2024, mayo). <em>Resumen informativo: 31 de mayo de 2024</em>. <a href="https://cna.org.mx/resumen-informativo-31-de-mayo-de-2024/" target="_blank">https://cna.org.mx</a></p>
+      </div>
+
+      <!-- FUENTES WEB -->
+      <h3 style="font-family:'Playfair Display',serif; font-size:1.05rem; color:var(--oscuro); margin:1.75rem 0 1rem; display:flex; align-items:center; gap:.5rem"><i class="bi bi-globe" style="color:var(--dorado)"></i> Fuentes institucionales en línea</h3>
+      <div class="fuente-item">
+        <i class="bi bi-globe fuente-ico"></i>
+        <p>Banco de México (Banxico). (2025). <em>Política monetaria y sistema financiero</em>. <a href="https://www.banxico.org.mx" target="_blank">https://www.banxico.org.mx</a></p>
+      </div>
+      <div class="fuente-item">
+        <i class="bi bi-globe fuente-ico"></i>
+        <p>Secretaría de Hacienda y Crédito Público (SHCP). (2025). <em>Presupuesto de Egresos de la Federación</em>. <a href="https://www.gob.mx/shcp" target="_blank">https://www.gob.mx/shcp</a></p>
+      </div>
+      <div class="fuente-item">
+        <i class="bi bi-globe fuente-ico"></i>
+        <p>Servicio de Administración Tributaria (SAT). (2025). <em>Ingresos tributarios de México</em>. <a href="https://www.sat.gob.mx" target="_blank">https://www.sat.gob.mx</a></p>
+      </div>
+
+      <!-- ÍCONOS -->
+      <h3 style="font-family:'Playfair Display',serif; font-size:1.05rem; color:var(--oscuro); margin:1.75rem 0 1rem; display:flex; align-items:center; gap:.5rem"><i class="bi bi-image" style="color:var(--dorado)"></i> Recursos gráficos y tipográficos</h3>
+      <div class="fuente-item">
+        <i class="bi bi-bootstrap fuente-ico"></i>
+        <p>The Bootstrap Authors. (2023). <em>Bootstrap Icons v1.11.3</em> [Biblioteca de íconos SVG]. MIT License. <a href="https://icons.getbootstrap.com" target="_blank">https://icons.getbootstrap.com</a></p>
+      </div>
+      <div class="fuente-item">
+        <i class="bi bi-fonts fuente-ico"></i>
+        <p>Google LLC. (2024). <em>Google Fonts: Playfair Display & DM Sans</em> [Tipografías web]. Open Font License. <a href="https://fonts.google.com" target="_blank">https://fonts.google.com</a></p>
+      </div>
+
+      <!-- IMÁGENES Y RECURSOS VISUALES -->
+      <h3 style="font-family:'Playfair Display',serif; font-size:1.05rem; color:var(--oscuro); margin:1.75rem 0 1rem; display:flex; align-items:center; gap:.5rem"><i class="bi bi-card-image" style="color:var(--dorado)"></i> Fuentes de imagen y recursos visuales</h3>
+      <div class="fuente-item">
+        <i class="bi bi-card-image fuente-ico"></i>
+        <p>Bootstrap Icons. (2024). <em>Biblioteca de iconografía SVG</em>. Recurso visual utilizado en navegación, tarjetas, botones y apoyos gráficos del portafolio. <a href="https://icons.getbootstrap.com" target="_blank">https://icons.getbootstrap.com</a></p>
+      </div>
+      <div class="fuente-item">
+        <i class="bi bi-card-image fuente-ico"></i>
+        <p>Este portafolio no utiliza fotografías externas; la propuesta visual se construye con íconos vectoriales, tipografías web y color institucional.</p>
+      </div>
+
+      <!-- ÍCONOS BOOTSTRAP -->
+      <h3 style="font-family:'Playfair Display',serif; font-size:1.05rem; color:var(--oscuro); margin:1.75rem 0 1rem; display:flex; align-items:center; gap:.5rem"><i class="bi bi-bootstrap" style="color:var(--dorado)"></i> Íconos Bootstrap usados</h3>
+      <div class="cards-grid" style="margin-bottom:1rem">
+        <div class="card">
+          <div class="card-icon verde"><i class="bi bi-house-door"></i></div>
+          <h3>Inicio</h3>
+          <p>Se usa para la navegación principal y los accesos de regreso al arranque del portafolio.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon naranja"><i class="bi bi-sunlight"></i></div>
+          <h3>Sector Agropecuario</h3>
+          <p>Representa la unidad III y el trabajo del campo, la agricultura y la producción primaria.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon azul"><i class="bi bi-hammer"></i></div>
+          <h3>Sector Industrial</h3>
+          <p>Se usa para identificar la industria, la manufactura y el desarrollo del sector secundario.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon dorado"><i class="bi bi-bank2"></i></div>
+          <h3>Política Financiera</h3>
+          <p>Icono aplicado a la política fiscal, monetaria, bancaria y al sistema financiero mexicano.</p>
+        </div>
+      </div>
+
+      <div class="cards-grid" style="margin-bottom:1.5rem">
+        <div class="card">
+          <div class="card-icon verde"><i class="bi bi-collection"></i></div>
+          <h3>Contenido académico</h3>
+          <p>Sirve para agrupar las secciones temáticas y mostrar que el portafolio contiene varias unidades.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon naranja"><i class="bi bi-person-badge"></i></div>
+          <h3>Datos del diseñador</h3>
+          <p>Se usa para la sección personal, donde se presentan tus datos académicos y de identificación.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon azul"><i class="bi bi-journal-text"></i></div>
+          <h3>Fuentes APA</h3>
+          <p>Ícono empleado para la sección de referencias, donde se documentan las fuentes de texto e imagen.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon dorado"><i class="bi bi-arrow-right-short"></i></div>
+          <h3>Acciones rápidas</h3>
+          <p>Se usa en botones y enlaces para guiar la navegación entre bloques de información del sitio.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-grid">
+      <div><div class="footer-logo"><i class="bi bi-pin-map-fill"></i> Descubre México</div><p class="footer-desc">Portafolio de Evidencias · 2° Parcial · UAC 2026.</p></div>
+      <div class="footer-col"><h5>Secciones</h5><ul>
+        <li><a onclick="navigate('inicio')"><i class="bi bi-house-door"></i> Inicio</a></li>
+        <li><a onclick="navigate('agropecuario')"><i class="bi bi-sunlight"></i> S. Agropecuario</a></li>
+        <li><a onclick="navigate('industrial')"><i class="bi bi-hammer"></i> S. Industrial</a></li>
+        <li><a onclick="navigate('servicios')"><i class="bi bi-headset"></i> S. Servicios</a></li>
+        <li><a onclick="navigate('politica-fin')"><i class="bi bi-bank2"></i> Política Financiera</a></li>
+        <li><a onclick="navigate('sobre')"><i class="bi bi-person-badge"></i> Diseñador</a></li>
+      </ul></div>
+      <div class="footer-col"><h5>Autor del Portafolio</h5><p>Sebastián Eligio Ríos Fuentes<br>Matrícula: 64697<br>al064697@uacam.mx<br>ISC 8° Sem. — UAC, 2026.</p></div>
+    </div>
+    <div class="footer-bottom">© 2026 Sebastián Eligio Ríos Fuentes · Matrícula 64697 · Universidad Autónoma de Campeche</div>
+  </footer>
+</div>
+
+<script src="recursos-y-necesidad.js" defer></script>
+</body>
+</html>
